@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f1eb">
+  <meta name="description" content="daelseo의 마이링크. 흩어져 있는 링크를 한곳에서 만나보세요.">
+  <title>daelseo — MyLink</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="MyLink 홈"><span class="brand-icon" aria-hidden="true">↗</span> mylink<span class="brand-dot">.</span></a>
+      <button class="share-button" id="share" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span>주소 복사</span></button>
+    </header>
+    <main>
+      <section class="profile" aria-labelledby="profile-name">
+        <div class="eyebrow"><span></span> MY LITTLE CORNER OF THE WEB</div>
+        <div class="avatar-wrap"><div class="avatar" aria-hidden="true">d<span>.</span></div><span class="avatar-spark" aria-hidden="true">✳</span></div>
+        <p class="handle">@daelseo</p>
+        <h1 id="profile-name">반가워요,<br><span>daelseo</span>입니다.</h1>
+        <p class="intro">흩어져 있던 링크를 한곳에.<br>저의 공간과 프로젝트를 만나보세요.</p>
+        <div class="profile-tag"><span aria-hidden="true">↗</span> 아이디어를 현실로</div>
+      </section>
+      <section class="links-section" aria-labelledby="links-title">
+        <div class="section-heading"><h2 id="links-title">나를 만나는 링크</h2><span>03 LINKS</span></div>
+        <a class="link-card featured" href="https://www.instagram.com/dael_seo/" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" stroke="none"/></svg></span>
+          <span class="link-copy"><span class="link-kicker">CONNECT ON INSTAGRAM</span><strong>Instagram</strong><span class="link-description">@dael_seo · 인스타그램에서 만나요</span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">새 탭에서 열기</span>
+        </a>
+        <a class="link-card" href="https://github.com/daelseo?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon lavender" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+          <span class="link-copy"><strong>프로젝트 모아보기</strong><span class="link-description">GitHub 저장소 둘러보기</span></span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">새 탭에서 열기</span>
+        </a>
+        <a class="link-card" href="https://github.com/daelseo/mylink" target="_blank" rel="noopener noreferrer" id="source-link">
+          <span class="link-icon peach" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg></span>
+          <span class="link-copy"><strong>이 페이지의 소스 코드</strong><span class="link-description">MyLink가 만들어진 과정</span></span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">새 탭에서 열기</span>
+        </a>
+        <div class="note"><span class="note-star" aria-hidden="true">✳</span><p>작은 아이디어도,<br><strong>하나의 링크에서 시작하니까.</strong></p><span class="note-line" aria-hidden="true">↗</span></div>
+      </section>
+    </main>
+    <footer><span>© <span id="year">2026</span> daelseo</span><span>A little page. A world of links.</span><a href="./" aria-label="페이지 맨 위로">MYLINK ↗</a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="copy-dialog"><form method="dialog"><h2>링크 공유하기</h2><p>아래 주소를 복사해 공유하세요.</p><label for="share-url">MyLink 주소</label><input id="share-url" readonly><button class="dialog-close">닫기</button></form></dialog>
+</body>
+</html>
